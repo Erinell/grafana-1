@@ -1,6 +1,6 @@
 ![Grafana](docs/logo-horizontal.png)
 
-La platforme open source pour surveiller et visualiser.⚠️
+La platforme open source pour surveiller et visualiser.
 
 [![Licence](https://img.shields.io/github/license/grafana/grafana)](LICENSE)
 [![Circle CI](https://img.shields.io/circleci/build/gh/grafana/grafana)](https://circleci.com/gh/grafana/grafana)
