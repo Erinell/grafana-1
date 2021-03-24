@@ -456,7 +456,7 @@ function getPluginIcon(type: string) {
 
 export function getLoadingNav(): NavModel {
   const node = {
-    text: 'Loading...',
+    text: 'Chargement...',
     icon: 'icon-gf icon-gf-panel',
   };
   return {

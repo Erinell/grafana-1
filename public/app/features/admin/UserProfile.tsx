@@ -88,7 +88,7 @@ export class UserProfile extends PureComponent<Props, State> {
 
     return (
       <>
-        <h3 className="page-heading">User information</h3>
+        <h3 className="page-heading">Informations utilisateur</h3>
         <div className="gf-form-group">
           <div className="gf-form">
             <table className="filter-table form-inline">
@@ -127,7 +127,7 @@ export class UserProfile extends PureComponent<Props, State> {
           </div>
           <div className={styles.buttonRow}>
             <Button variant="destructive" onClick={this.showDeleteUserModal(true)}>
-              Delete User
+              Supprimer
             </Button>
             <ConfirmModal
               isOpen={showDeleteModal}

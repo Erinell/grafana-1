@@ -40,7 +40,7 @@ func addOrgUserHelper(cmd models.AddOrgUserCommand) response.Response {
 	if err := bus.Dispatch(&cmd); err != nil {
 		if errors.Is(err, models.ErrOrgUserAlreadyAdded) {
 			return response.JSON(409, util.DynMap{
-				"message": "Utilisateur déjà membre de l'organisation",
+				"message": "Utilisateur déjà Viewer de l'organisation",
 				"userId":  cmd.UserId,
 			})
 		}
@@ -183,7 +183,7 @@ func updateOrgUserHelper(cmd models.UpdateOrgUserCommand) response.Response {
 		return response.Error(500, "Failed update org user", err)
 	}
 
-	return response.Success("Utilisateur de l'organisation mis a jour")
+	return response.Success("Utilisateur mis a jour")
 }
 
 // DELETE /api/org/users/:userId
@@ -215,5 +215,5 @@ func removeOrgUserHelper(cmd *models.RemoveOrgUserCommand) response.Response {
 		return response.Success("Utilisateur supprimé")
 	}
 
-	return response.Success("Utilisateur enlevé de l'organisation")
+	return response.Success("Utilisateur supprimé")
 }

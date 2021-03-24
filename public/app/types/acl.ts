@@ -1,6 +1,6 @@
 export enum OrgRole {
-  Viewer = 'Membre',
-  Editor = 'Editeur',
+  Viewer = 'Viewer',
+  Editor = 'Editor',
   Admin = 'Admin',
 }
 
@@ -71,8 +71,8 @@ export enum DataSourcePermissionLevel {
 export enum AclTarget {
   Team = 'Team',
   User = 'User',
-  Viewer = 'Membre',
-  Editor = 'Editeur',
+  Viewer = 'Viewer',
+  Editor = 'Editor',
 }
 
 export interface AclTargetInfo {

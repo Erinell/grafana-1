@@ -17,14 +17,14 @@ export class UserTeams extends PureComponent<Props> {
     const { isLoading, teams } = this.props;
 
     if (isLoading) {
-      return <LoadingPlaceholder text="Loading teams..." />;
+      return <LoadingPlaceholder text="Chargement..." />;
     }
 
     return (
       <>
         {teams.length > 0 && (
           <>
-            <h3 className="page-sub-heading">Teams</h3>
+            <h3 className="page-sub-heading">Equipes</h3>
             <div className="gf-form-group">
               <table className="filter-table form-inline">
                 <thead>
@@ -32,7 +32,7 @@ export class UserTeams extends PureComponent<Props> {
                     <th />
                     <th>Nom</th>
                     <th>Email</th>
-                    <th>Membres</th>
+                    <th>Viewers</th>
                   </tr>
                 </thead>
                 <tbody>

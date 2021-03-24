@@ -121,7 +121,7 @@ export class TeamList extends PureComponent<Props, any> {
                 <th />
                 <th>Nom</th>
                 <th>Email</th>
-                <th>Membres</th>
+                <th>Viewers</th>
                 <th style={{ width: '1%' }} />
               </tr>
             </thead>
